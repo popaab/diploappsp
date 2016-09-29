@@ -1,0 +1,102 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+.titleblock{
+	width: 100%;
+	height: 31px;
+	background: #E6E6E6;
+	padding-top: 0;
+	margin: 0;
+}
+
+.titleblock h4{
+	text-align: center;
+	font-size: 15px;
+	font-weight: 200;
+	padding-top: 7px;
+	margin: 0;
+}
+
+table.table{
+	margin: 0;
+}
+
+.table td.leftdetail{
+	width: 130px;
+	padding-left: 16px;
+	font-size: 15px;
+	font-weight: 200;
+}
+
+.table td.rightdetail{
+	font-size: 15px;
+	font-weight: 200;
+}
+
+tr.confirmation{
+	height: 78px;
+	border-bottom: solid 1px #ddd;
+}
+
+td.question{
+	width: 250px;
+	padding: 30px 0 30px 16px!important;
+}
+
+td.answer{
+	color: #9B9B9B;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 200;
+	padding: 10px 3px!important;
+}
+
+/*button.grecircle,
+button.greyx{
+	padding-top: 5px;
+	width: 55px;
+	height: 55px;
+}*/
+
+button{
+	background: none;
+	border: none;
+}
+
+.grey1 button.greycircle1, .grey2 button.greycircle2{
+	background: url("../images/svg/greycircle.svg") no-repeat;
+	background-position: top;
+	color: #9B9B9B;
+}
+
+.grey1 button.greycircle1, .grey2 button.greycircle2{
+	padding-top: 15px;
+	vertical-align: bottom;
+}
+
+.grey1 button.greycircle1:focus, .grey2 button.greycircle2:focus{
+	background: url("../images/svg/bluecircle.svg") no-repeat;
+	background-position: top;
+	color: #4A90E2;
+	outline: none;
+}
+
+.grey1 button.greyx1, .grey2 button.greyx2{
+	background: url("../images/svg/greyx.svg") no-repeat;
+	background-position: top;
+	background-size: 38px 38px;
+	color: #9B9B9B;
+}
+
+.grey1 button.greyx1, .grey2 button.greyx2{
+	padding-top: 15px;
+	vertical-align: bottom;
+}
+
+.grey1 button.greyx1:focus, .grey2 button.greyx2:focus{
+	background: url("../images/svg/bluex.svg") no-repeat;
+	background-position: top;
+	background-size: 38px 38px;
+	color: #4A90E2;
+	outline: none;
+}

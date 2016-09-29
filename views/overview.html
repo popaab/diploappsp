@@ -1,0 +1,98 @@
+<div ng-controller="OverviewCtrl">
+
+  <div class="form-search">
+    <span class="fa fa-search"></span>
+    <input placeholder="ID検索・現場登録" type="search" />
+    <input type="reset" value="キャンセル" />
+  </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+      <a class="nav-link" data-toggle="tab" data-target="#allsites" role="tab">すべての現場</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" data-target="#unsigned" role="tab">未署名の現場</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" data-target="#signed" role="tab">署名済みの現場</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <!-- all sites tab content -->
+    <div class="tab-pane fade in active" id="allsites" role="tabpanel">
+      <!-- <a ng-repeat="item in sites" href="#/site/{{ item.id }}"> -->
+      <a ng-repeat="item in sites | filter:{'type':'unsigned'}" href="#/form/{{sites.indexOf(item)}}">  
+        <div class="row">
+          <div class="col-xs-4 leftcol">
+            <img src="images/svg/datecircle.svg">
+            <h4>{{ item.date }}</h4>
+          </div> 
+          <div class="col-xs-4 midcol">
+            <h4>{{ item.city }}{{ item.district }}{{ item.name }}現場</h4>
+            <p>{{ item.time }}</p>
+          </div>
+          <div class="col-xs-4 rightcol">
+            <img ng-src="{{ item.img }}">
+          </div>         
+        </div>
+      </a>
+      <a ng-repeat="item in sites | filter:{'type':'beensigned'}" href="#/site/{{sites.indexOf(item)}}">  
+        <div class="row">
+          <div class="col-xs-4 leftcol">
+            <img src="images/svg/datecircle.svg">
+            <h4>{{ item.date }}</h4>
+          </div> 
+          <div class="col-xs-4 midcol">
+            <h4>{{ item.city }}{{ item.district }}{{ item.name }}現場</h4>
+            <p>{{ item.time }}</p>
+          </div>
+          <div class="col-xs-4 rightcol">
+            <img ng-src="{{ item.img }}">
+          </div>         
+        </div>
+      </a>
+    </div>
+    <!-- unsigned sites tab content -->
+    <div class="tab-pane fade" id="unsigned" role="tabpanel">
+      <a ng-repeat="item in sites | filter:{'type':'unsigned'}" href="#/form/{{sites.indexOf(item)}}">
+        <div class="row">
+          <div class="col-xs-4 leftcol">
+            <img src="images/svg/datecircle.svg">
+            <h4>{{ item.date }}</h4>
+          </div> 
+          <div class="col-xs-4 midcol">
+            <h4>{{ item.city }}{{ item.district }}{{ item.name }}現場</h4>
+            <p>{{ item.time }}</p>
+          </div>
+          <div class="col-xs-4 rightcol">
+            <img ng-src="{{ item.img }}">
+          </div>
+        </div>
+      </a>         
+    </div>
+    <!-- signed sites tab content -->
+    <div class="tab-pane fade" id="signed" role="tabpanel">
+      <a ng-repeat="item in sites | filter:{'type':'beensigned'}" href="#/site/{{sites.indexOf(item)}}">
+        <div class="row">
+          <div class="col-xs-4 leftcol">
+            <img src="images/svg/datecircle.svg">
+            <h4>{{ item.date }}</h4>
+          </div> 
+          <div class="col-xs-4 midcol">
+            <h4>{{ item.city }}{{ item.district }}{{ item.name }}現場</h4>
+            <p>{{ item.time }}</p>
+          </div>
+          <div class="col-xs-4 rightcol">
+            <img ng-src="{{ item.img }}">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</div>

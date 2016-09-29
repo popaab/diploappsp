@@ -1,0 +1,65 @@
+<div ng-controller="FormCtrl">
+
+		<div class="titleblock">
+			<h4>現場詳細</h4>
+		</div>
+
+		<table class="table" ng-model="sites">
+		  <tbody>
+		    <tr>
+		      <td class="leftdetail">現場名</td>
+		      <td class="rightdetail">{{ sites[whichSite].city }}{{ sites[whichSite].district }}{{ sites[whichSite].name }}現場</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">人数</td>
+		      <td class="rightdetail">{{ sites[whichSite].people }}人</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">作業時間</td>
+		      <td class="rightdetail">{{ sites[whichSite].time1 }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">作業内容</td>
+		      <td class="rightdetail">{{ sites[whichSite].work }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">日付</td>
+		      <td class="rightdetail">{{ sites[whichSite].date1 }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">御社名</td>
+		      <td class="rightdetail">{{ sites[whichSite].company }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">御担当者様</td>
+		      <td class="rightdetail">{{ sites[whichSite].staff }}</td>
+		    </tr>
+		  </tbody>
+		</table>
+
+		<div class="titleblock">
+			<h4>作業確認フォーム</h4>
+		</div>
+
+		<table class="table">
+		  <tbody>
+		    <tr class="confirmation">
+				<td class="question">作業予定時間内に終了しましたか?</td>
+				<td class="answer">
+			      	<div class="grey1">
+			      		<button type="radio" class="greycircle1" ng-click="timesurvey=false">
+							<br>はい
+						</button>
+			      		<button class="greyx1" ng-click="timesurvey=true">
+			      			<br>いいえ
+			      		</button>
+			      	</div>
+		      	</td>
+		    </tr>
+		    <tr class="showsurvey">
+		    	<td ng-show="timesurvey">質問</td>
+		    </tr>
+		</tbody>
+		</table>
+
+</div>
