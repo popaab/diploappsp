@@ -44,7 +44,40 @@
 		<table class="table">
 		  <tbody>
 		    <tr class="confirmation">
-				<td class="question">作業予定時間内に終了しましたか?</td>
+				<td class="question">
+					作業予定時間内に終了しましたか?
+					<div class="timeinput" ng-show="timesurvey">
+						<p>作業時間</p>
+						<div class="form-group">
+						    <select ng-show="timesurvey" class="form-control" id="hourSelect1">
+						      <option>1</option>
+						      <option>2</option>
+						      <option>3</option>
+						      <option>4</option>
+						      <option>5</option>
+						      <option>6</option>
+						      <option>7</option>
+						      <option>8</option>
+						      <option>9</option>
+						      <option>10</option>
+						      <option>11</option>
+						      <option>12</option>
+						      <option>13</option>
+						      <option>14</option>
+						      <option>15</option>
+						      <option>16</option>
+						      <option>17</option>
+						      <option>18</option>
+						      <option>19</option>
+						      <option>20</option>
+						      <option>21</option>
+						      <option>22</option>
+						      <option>23</option>
+						      <option>24</option>
+						    </select>
+	  					</div>
+  				</div>
+				</td>
 				<td class="answer">
 			      	<div class="grey1">
 			      		<button type="radio" class="greycircle1" ng-click="timesurvey=false">
@@ -55,9 +88,6 @@
 			      		</button>
 			      	</div>
 		      	</td>
-		    </tr>
-		    <tr class="showsurvey">
-		    	<td ng-show="timesurvey">質問</td>
 		    </tr>
 		</tbody>
 		</table>
