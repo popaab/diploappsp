@@ -13,7 +13,7 @@
       "company": "株式会社ABC工業",
       "staff": "田中",
       "type": "unsigned",
-      "img": "../../images/svg/nsign.svg"
+      "img": "images/svg/nsign.svg"
    },
    {
       "id": "A12445",
@@ -29,7 +29,7 @@
       "company": "鈴木工業",
       "staff": "斎藤",
       "type": "beensigned",
-      "img": "../../images/svg/signed.svg"
+      "img": "images/svg/signed.svg"
    },
    {
       "id": "A13679",
@@ -45,6 +45,6 @@
       "company": "三菱産業",
       "staff": "大島",
       "type": "beensigned",
-      "img": "../../images/svg/signed.svg"
+      "img": "images/svg/signed.svg"
    }
 ]
