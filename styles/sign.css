@@ -18,7 +18,7 @@
 	width: 669px;
 	margin-top: -65px;
 	background: #F4F4F4;
-	border: solid 1px #979797;
+	border-bottom: solid 1px #979797;
 	z-index: 900;
 	transform: rotate(90deg);
 	transform-origin: left top 0;
