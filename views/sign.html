@@ -1,0 +1,32 @@
+<div ng-controller="MainCtrl">
+
+	<div class="signheader">
+    </div>
+
+    <div class="top-bar">
+    	<div class="rotate">
+    		<a href="#/form/0">
+    			<img class="xmark" src="../images/svg/xmark.svg">
+    		</a>
+    		署名を手書きで入力してください
+    		<a href="">
+    			<img class="checkmark" src="../images/svg/checkmark.svg">
+    		</a>
+    	</div>
+    </div>
+
+    <div class="signatureline">
+    	<button class="showsign" ng-click="signature=true"></button>
+    </div>
+
+    <a ng-click="signature=false">
+	    <div class="clearbtn">
+	    	クリア
+	    </div>
+	</a>
+
+	<div ng-show="signature" class="signature">
+		<img src="../images/svg/signature.svg">
+	</div>
+
+</div>

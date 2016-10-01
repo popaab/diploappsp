@@ -1,0 +1,84 @@
+.top-bar{
+	float: right;
+}
+
+.signheader{
+	position: absolute;
+	margin: -64px;
+	width: 100%;
+	height: 64px;
+	background: white;
+	z-index: 900;
+}
+
+.rotate{
+	float: right;
+	position: absolute;
+	height: 52px;
+	width: 669px;
+	margin-top: -65px;
+	background: #F4F4F4;
+	border: solid 1px #979797;
+	z-index: 900;
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+
+img.xmark{
+	width: 50px;
+	padding: 6px 5px;
+	margin-left: 1px;
+	margin-right: 160px;
+}
+
+img.checkmark{
+	width: 50px;
+	padding: 6px 5px;
+	margin-left: 185px;
+}
+
+.signatureline{
+	margin-left: 130px;
+	height: 540px;
+	width: 200px;
+	border-left: solid 1px;
+}
+
+button.showsign{
+	width: 100px;
+	height: 540px;
+	border: none;
+	background: none;
+}
+
+button.showsign:focus{
+	outline: none;
+}
+
+.clearbtn{
+	position: absolute;
+	margin-top: -225px;
+	margin-left: 8px;
+	padding-top: 17px;
+	font-size: 14px;
+	text-align: center;
+	height: 55px;
+	width: 85px;
+	border: solid 1px #979797;
+	border-radius: 9px;
+	color: #4A4A4A;
+	transform: rotate(90deg);
+	transform-origin: right top 0;
+}
+
+.signature{
+	position: absolute;
+	margin-left: 80px;
+	margin-top: -175px;
+	transform: rotate(90deg);
+	transform-origin: right top 0;
+}
+
+.signature img{
+	width: 200px;
+}
