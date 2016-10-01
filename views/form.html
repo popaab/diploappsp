@@ -11,84 +11,89 @@
       <span class="title">アプリ名</span>
     </div>
 
-	<div class="titleblock">
-		<h4>現場詳細</h4>
-	</div>
+    <div class="formcontainer">
+		<div class="titleblock">
+			<h4>現場詳細</h4>
+		</div>
 
-	<table class="table" ng-model="sites">
-	  <tbody>
-	    <tr>
-	      <td class="leftdetail">現場名</td>
-	      <td class="rightdetail">{{ sites[whichSite].city }}{{ sites[whichSite].district }}{{ sites[whichSite].name }}現場</td>
-	    </tr>
-	    <tr>
-	      <td class="leftdetail">人数</td>
-	      <td class="rightdetail">{{ sites[whichSite].people }}人</td>
-	    </tr>
-	    <tr>
-	      <td class="leftdetail">作業時間</td>
-	      <td class="rightdetail">{{ sites[whichSite].time1 }}</td>
-	    </tr>
-	    <tr>
-	      <td class="leftdetail">作業内容</td>
-	      <td class="rightdetail">{{ sites[whichSite].work }}</td>
-	    </tr>
-	    <tr>
-	      <td class="leftdetail">日付</td>
-	      <td class="rightdetail">{{ sites[whichSite].date1 }}</td>
-	    </tr>
-	    <tr>
-	      <td class="leftdetail">御社名</td>
-	      <td class="rightdetail">{{ sites[whichSite].company }}</td>
-	    </tr>
-	    <tr>
-	      <td class="leftdetail">御担当者様</td>
-	      <td class="rightdetail">{{ sites[whichSite].staff }}</td>
-	    </tr>
-	  </tbody>
-	</table>
+		<table class="table" ng-model="sites">
+		  <tbody>
+		    <tr>
+		      <td class="leftdetail">現場名</td>
+		      <td class="rightdetail">{{ sites[whichSite].city }}{{ sites[whichSite].district }}{{ sites[whichSite].name }}現場</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">人数</td>
+		      <td class="rightdetail">{{ sites[whichSite].people }}人</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">作業時間</td>
+		      <td class="rightdetail">{{ sites[whichSite].time1 }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">作業内容</td>
+		      <td class="rightdetail">{{ sites[whichSite].work }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">日付</td>
+		      <td class="rightdetail">{{ sites[whichSite].date1 }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">御社名</td>
+		      <td class="rightdetail">{{ sites[whichSite].company }}</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">御担当者様</td>
+		      <td class="rightdetail">{{ sites[whichSite].staff }}</td>
+		    </tr>
+		  </tbody>
+		</table>
 
-	<div class="titleblock">
-		<h4>作業確認フォーム</h4>
-	</div>
+		<div class="titleblock">
+			<h4>作業確認フォーム</h4>
+		</div>
 
-	<table class="table">
-	  <tbody>
-	    <tr class="confirmation">
-			<td class="question">
-				作業予定時間内に終了しましたか?
-			</td>
-			<td class="answer">
-		      	<div class="grey1">
-		      		<button type="radio" class="greycircle1" ng-click="timesurvey=false">
-						<br>はい
-					</button>
-		      		<button class="greyx1" ng-click="timesurvey=true">
-		      			<br>いいえ
-		      		</button>
-		      	</div>
-	      	</td>
-	    </tr>
-	</tbody>
-	</table>
-		
-	<table class="table">
-		<tbody>
-			<tr class="hiddenform">
-				<td class="timetitle" ng-show="timesurvey">
-				作業時間
+		<table class="table">
+		  <tbody>
+		    <tr class="confirmation">
+				<td class="question">
+					作業予定時間内に終了しましたか?
 				</td>
-				<td class="timeinput" ng-show="timesurvey">
-					From<input ng-show="timesurvey" class="form-control" type="time" value="" id="example-time-input">
-				</td>
-				<td class="timetext" ng-show="timesurvey">
-					〜
-				</td>
-				<td class="timeinput" ng-show="timesurvey">
-					To<input ng-show="timesurvey" class="form-control" type="time" value="" id="example-time-input">
-				</td>
-			</tr>
+				<td class="answer">
+			      	<div class="grey1">
+			      		<button type="radio" class="greycircle1" ng-click="timesurvey=false">
+							<br>はい
+						</button>
+			      		<button class="greyx1" ng-click="timesurvey=true">
+			      			<br>いいえ
+			      		</button>
+			      	</div>
+		      	</td>
+		    </tr>
 		</tbody>
-	</table>
-	
+		</table>
+			
+		<table class="table">
+			<tbody>
+				<tr class="hiddenform">
+					<td class="timetitle" ng-show="timesurvey">
+					作業時間
+					</td>
+					<td class="timeinput" ng-show="timesurvey">
+						From<input ng-show="timesurvey" class="form-control" type="time" value="" id="example-time-input">
+					</td>
+					<td class="timetext" ng-show="timesurvey">
+						〜
+					</td>
+					<td class="timeinput" ng-show="timesurvey">
+						To<input ng-show="timesurvey" class="form-control" type="time" value="" id="example-time-input">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+		<div class="signbutton">
+				<a href="">サイン</a>
+		</div>
 </div>
