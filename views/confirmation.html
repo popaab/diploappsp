@@ -1,0 +1,70 @@
+<div ng-controller="MainCtrl">
+
+	<div class="siteheader">
+      <!-- home icon -->
+      <a ng-href="#/home">
+        <img src="images/svg/home.svg" class="pull-left">
+        </a>
+      <!-- delete icon -->
+      <a href="">
+        <img src="images/svg/delete.svg" class="pull-right">
+      </a>
+      <span class="title">アプリ名</span>
+    </div>
+
+    <div class="confirmcontainer">
+		<div class="titleblock">
+			<h4>現場詳細</h4>
+		</div>
+
+		<table class="table">
+		  <tbody>
+		    <tr>
+		      <td class="leftdetail">現場名</td>
+		      <td class="rightdetail">千葉市中央区〇〇現場</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">人数</td>
+		      <td class="rightdetail">3人</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">作業時間</td>
+		      <td class="rightdetail">8 時 00 分 〜 12 時 00 分</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">作業内容</td>
+		      <td class="rightdetail">資料搬入業務</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">日付</td>
+		      <td class="rightdetail">2016年5月26日</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">御社名</td>
+		      <td class="rightdetail">株式会社ABC工業</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">御担当者様</td>
+		      <td class="rightdetail">田中</td>
+		    </tr>
+		    <tr>
+		      <td class="leftdetail">御担当者様署名</td>
+		      <td class="rightdetail">
+		      	<img src="../images/svg/signature.svg">
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+	</div>
+
+	<div ng-show="showsigned" class="confirmsigned">
+		署名済み
+	</div>
+
+	<div class="bottombtn">
+		<button class="edit" href="#/form/0">編集</button><button class="send" ng-click="showsigned=true">送信</button>
+	</div>
+
+		
+
+</div>

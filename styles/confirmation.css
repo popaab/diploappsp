@@ -1,0 +1,41 @@
+.confirmcontainer{
+	height: 550px;
+}
+
+button.edit{
+	height: 56px;
+	width: 187.5px;
+	color: white;
+	font-size: 20px;
+	padding: 2px 0;
+	margin: 0;
+	background: #9B9B9B;
+	z-index: -1;
+}
+
+button.send{
+	height: 56px;
+	width: 187.5px;
+	color: white;
+	font-size: 20px;
+	padding: 2px 0;
+	margin: 0;
+	background: #4A90E2;
+	z-index: -1;
+}
+
+button.send:focus,
+button.edit:focus{
+	outline: none;
+}
+
+.confirmsigned{
+	height: 56px;
+	background: #AFAFAF;
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	padding-top: 14px;
+	z-index: 900;
+}
