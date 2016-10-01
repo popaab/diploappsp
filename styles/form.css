@@ -35,12 +35,13 @@ table.table{
 
 tr.confirmation{
 	height: 78px;
-	border-bottom: solid 1px #ddd;
+	border: none;
 }
 
 td.question{
 	width: 250px;
 	padding: 30px 0 30px 16px!important;
+	border: none;
 }
 
 td.answer{
@@ -51,6 +52,7 @@ td.answer{
 	padding: 10px 3px!important;
 }
 
+/* はい＆いいえボタン */
 button{
 	background: none;
 	border: none;
@@ -94,11 +96,30 @@ button{
 	outline: none;
 }
 
-.timeinput p{
-	margin: 35px 0 0;
+/* 作業時間入力 */	
+table.table tbody tr.hiddenform td.timeinput{
+	border: none;
 }
 
-.form-group{
-	width: 60px;
-	height: 40px;
+table.table tbody tr.hiddenform td.timetext{
+	border: none;
+	padding-top: 33px;
+	padding-left: 14px;
+	width: 50px;
+}
+
+table.table tbody tr.hiddenform td.timetitle{
+	border: none;
+	padding-left: 17px;
+	padding-top: 33px;
+}
+
+input#example-time-input.form-control{
+	width: 80px;
+	text-align: center;
+}
+
+td.timeinput{
+	padding: 8px 0;
+	width: 100px;
 }
