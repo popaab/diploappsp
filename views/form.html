@@ -92,10 +92,42 @@
 				</tr>
 			</tbody>
 		</table>
+
+		<table class="table">
+			<tbody>
+				<tr>
+					<td ng-show="timesurvey" style="border: none; padding-left: 132px; width: 100px">
+						From<input ng-show="timesurvey" class="form-control" type="text" id="example-time-input">
+					</td>
+					<td ng-show="timesurvey" style="border: none; padding-top: 33px; padding-left: 20px">
+						〜
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="table">
+			<tbody>
+				<tr>
+					<td ng-show="timesurvey" style="border: none; padding-top: 33px; padding-left: 240px; width: 275px">
+						〜
+					</td>
+					<td ng-show="timesurvey" style="border: none; width: 100px">
+						To<input ng-show="timesurvey" class="form-control" type="text">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<a href="#/sign">
+			<div ng-show="timesurvey" class="signbutton">
+				サイン
+			</div>
+		</a>
 	</div>
 
 		<a href="#/sign">
-			<div class="signbutton">
+			<div ng-hide="timesurvey" ng-show="sign" class="signbutton">
 				サイン
 			</div>
 		</a>
