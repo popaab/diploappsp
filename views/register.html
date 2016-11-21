@@ -1,0 +1,63 @@
+<div class="register-page" ng-hide="register" id="page">
+	<p class="appname">アプリ名</p>
+	<div class="emailform">
+		<form class="email-form">
+			<p style="font-size: 24px; font-weight: 500; padding-bottom: 50px">メール設定</p>
+		 	<input type="text" placeholder="メールアドレス"/>
+		 	<a href="#/overview"><button ng-click="register=true">設定完了</button></a>
+		 	<a ng-click="showpolicy=true"><p style="padding-top: 20px">プライバシーポリシー</p></a>
+		</form>
+	</div>
+</div>
+
+<div class="register-page" ng-show="showpolicy" id="page">
+	<div class="showpolicy">
+		<a ng-click="showpolicy=false" class="pull-left" style="margin-top: 0; margin-left: 12px;">←戻る</a>
+		<span>アプリ名</span>
+	</div>
+
+	<div class="policy">
+		<div class="titleblock" style="margin-top: 22px">
+		<h4>プライバシーポリシー</h4>
+	</div>
+
+	<div class="privacyintro">
+		<p>株式会社〇〇〇（以下「当社」といいます）は、当社が提供するスマートフォン用アプリケーション「アプリ名」（以下「本アプリ」といいます）および本アプリに関するサービス（以下「本サービス」といいます）をご利用になる皆様（以下「利用者」といいます）の情報を以下のように取り扱うものとします。</p>
+	</div>
+
+	<div class="privacybody">
+		<h4>1．取得情報および利用目的</h4>
+		<p>当社は、本アプリおよび本サービスにおいて、利用者の情報を以下の目的のために利用いたします。なお、情報をご提供いただけない場合、本アプリおよび本サービスの全部あるいは一部をご利用いただけないことがございます。
+		<br>
+		<br>
+		1. 端末情報
+		<br>
+		取得情報：利用者の端末を識別するIDやOSのバージョンなどの端末に関する情報
+		<br>
+		取得方法：自動取得
+		<br>
+		利用目的：利用者の本人確認のため。利用規約に違反する態様でのご利用を防止するため
+		<br>
+		<br>
+		2. 位置情報
+		<br>
+		取得情報：位置情報
+		<br>
+		取得方法：自動取得
+		<br>
+		利用目的：マルチプレイなどの位置情報を必要とするサービスを提供するため	
+		<br>
+		<br>
+		3. 端末の電話帳情報
+		<br>
+		取得情報：利用者の端末の電話帳情報（氏名、電話番号、メールアドレス）
+		<br>
+		取得方法：自動取得
+		<br>
+		利用目的：本アプリに友達を招待するため</p>
+
+		<h4>2．情報収集モジュールの利用</h4>
+		<p>当社は、本アプリおよび本サービスの提供や利用に関する動向調査、利用者に適切な広告表示をするために、本アプリおよび本サービスの機能とは独立した、第三者による情報収集モジュールを利用することがあります。</p>
+	</div>
+	</div>
+</div>

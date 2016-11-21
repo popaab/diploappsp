@@ -55,26 +55,7 @@ body {
   margin: 30px 0;
 }
 
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  /*.jumbotron {
-    border-bottom: 0;
-  }*/
-}
-
-/*privacy style*/
+/* privacy style */
 .privacyintro p{
   padding: 18px 16px;
   color: #1F1F1F;
@@ -90,4 +71,77 @@ body {
 .privacybody p{
   padding: 10px 16px;
   color: #1F1F1F;
+}
+
+#page{
+  position: fixed;
+  width: 100%;
+  top: -24px;
+  background: white;
+}
+
+.register-page{
+  background: #F6F7FC;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.appname{
+  margin-top: 45px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.emailform{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  padding: 150px 45px;
+  text-align: center;
+}
+
+.emailform input {
+  outline: 0;
+  width: 100%;
+  border: none;
+  border-bottom: solid 2px #4A90E2;
+  margin: 0 0 35px;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.emailform button {
+  outline: 0;
+  background: none;
+  width: 100%;
+  height: 50px;
+  border: solid 2px #4A90E2;
+  border-radius: 30px;
+  padding: 15px;
+  color: #4A4A4A;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.emailform button:hover,.emailform button:active {
+  background: #4A90E2;
+  color: white;
+}
+
+.emailform a{
+  padding-top: 10px;
+}
+
+.showpolicy{
+  margin-top: 45px;
+  font-size: 17px;
+}
+
+.showpolicy a{
+}
+
+.showpolicy span{
+  padding-left: 90px;
 }

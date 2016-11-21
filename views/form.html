@@ -2,7 +2,7 @@
 
 	<div class="siteheader">
       <!-- home icon -->
-      <a ng-href="#/home">
+      <a ng-href="#/overview">
         <img src="images/svg/home.svg" class="pull-left">
         </a>
       <!-- delete icon -->
@@ -62,10 +62,10 @@
 				</td>
 				<td class="answer">
 			      	<div class="grey1">
-			      		<button type="radio" class="greycircle1" ng-click="timesurvey=false">
+			      		<button type="radio" class="greycircle1" ng-click="timesurvey=false; sign=true">
 							<br>はい
 						</button>
-			      		<button class="greyx1" ng-click="timesurvey=true">
+			      		<button class="greyx1" ng-click="timesurvey=true; sign=true">
 			      			<br>いいえ
 			      		</button>
 			      	</div>
@@ -131,5 +131,6 @@
 				サイン
 			</div>
 		</a>
+		
 
 </div>
