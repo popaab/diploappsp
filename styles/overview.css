@@ -1,16 +1,23 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 /*検索バー*/
-.form-search .fa-search { 
+.form-search { 
   position: absolute;
-  top: 15px;
-  left: 13px;
-  font-size: 18px;
-  z-index: 999;
-  color: #979797;
+  height: 50px;
+  font-size: 16px;
+  z-index: 1;
 }
 
-input[type="reset"]{
+.searchbutton{
+  width: 150px;
+  height: 40px;
+  border: solid 1px #979797;
+  border-radius: 3px;
+  margin-left: 12px;
+  color: #4A4A4A;
+}
+
+/*input[type="reset"]{
   width: 100%;
   border: none;
   -webkit-appearance: none;
@@ -57,8 +64,6 @@ input[type="reset"] {
   overflow: hidden;
   position: fixed;
   z-index: 900;
-  /*-webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);*/
 }
 
 .form-search input[type="search"],
@@ -118,7 +123,7 @@ input[type="reset"] {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
+}*/
 
 /*現場一覧タブ*/
 ul.nav.nav-tabs{
